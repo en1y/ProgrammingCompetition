@@ -33,6 +33,7 @@ def create_najveci(sum_elements):
 
 
 def create_najmanji(num_list):
+
     if len(num_list) != broj_znamenaka:
         mnum_list = list(reversed(num_list.copy()))
         mnum_list[0] = mnum_list[0] - 1
