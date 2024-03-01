@@ -65,9 +65,15 @@ def evaluate():
     if len(list_keys) == 1:
         return len(letters[list_keys[0]])
     if len(list_keys) > 1:
-        result = 1
-        for i in list_keys:
-            result = result*len(letters[str(i)])
+        if len(Nletters)  == 0:
+            result = 1
+        else:
+            result = 1
+            for i in Nletters.keys():
+                result = result*len(Nletters[i])
+
+        for i in range(len(list_keys) - len(Nletters)):
+            result = result*(len(letters[str(list_keys[i])]))
         return result
 
 
